@@ -6,7 +6,7 @@ function validatePhoneNumber(phone) {
     }
     
     // Rule 2: Must be exactly 12 characters (+968 + 8 digits)
-    if (phone.length !== 12) {
+    if (phone.length !== 11) { // BUG: changed from 12 to 11
         return false;
     }
     
